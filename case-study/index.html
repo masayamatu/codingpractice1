@@ -21,7 +21,12 @@
                 <p class="desc">確かなスタッフによる業務をサポート</p>
             </div>
         </div>
-        <button type="button" class="nav-button">
+        <nav class="nav">
+            <li><a href="#">会社情報</a></li>
+            <li><a href="#">サービス</a></li>
+            <li><a href="#" class="btn">お問い合わせ</a></li>
+        </nav>
+        <button type="button" class="nav-button" onclick="navFunc()">
             <span class="sr-only">MENU</span>
         </button>
     </div>
@@ -81,6 +86,67 @@
         </div>
     </div>
 </section>
+<section class="contact">
+    <div class="container">
+        <div class="text">
+            <h2>お問い合わせ</h2>
+            <p>もっと業務を効率化したい<br>
+               マネージメントの煩わしさから解放されたい<br>
+               本業に集中したいなどなど、<br>
+               些細無ことでもお気軽にお問い合わせください。</p>
+        </div>
+    <form class="form">
+        <p>
+            <label>
+                <span class="sr-only">名前</span> 
+                <input type="text" name = "name" placeholder="名前">
+            </label>
+        </p>
+        <p>
+            <label>
+                <span class="sr-only">メールアドレス</span> 
+                <input type="email" name = "email" placeholder="メールアドレス">
+            </label>
+        </p>
+        <p>
+            <label>
+                <span class="sr-only">メッセージ</span>
+                <textarea name = "msg" placeholder="メッセージを入力してください"></textarea>
+            </label>
+        </p>
+        <p>
+            <input type="submit" value="送信" class="btn">
+        </p>
+    </form>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="info">
+            <div class="site">
+                <img src="img/bb-white.svg" alt="">
+                <div>
+                    <p class="corp">BBアシスタントカンパニー</p>
+                </div>
+            </div>
+            <p class="add">
+                〒001-0001<br>
+                北海道中央区南53条東西ビル８F<br>
+                0001-1234-5678
+            </p>
+        </div>
+        <ul class="sns">
+            <li><a href="#"><img src="img/logo-twitter.svg" alt="Twitter"></a></li>
+            <li><a href="#"><img src="img/logo-facebook.svg" alt="Facebook"></a></li>
+            <li><a href="#"><img src="img/logo-instagram.svg" alt="Instagram"></a></li>
+        </ul>
+    </div>
+</footer>
+<script>
+    function navFunc(){
+        document.querySelector('html').classList.toggle('open')
+    }
+</script>
 
 </body>
 </html>
