@@ -117,7 +117,7 @@ a:hover{
     transform: translateY(1px) rotate(45deg);
     box-shadow: none;
 }
-.open .nav-button ::after {
+.open .nav-button::after {
     transform: translateY(-1px) rotate(-45deg);
 }
 /* hero */
@@ -443,6 +443,18 @@ a:hover{
     margin-left: 61px;
     list-style: none;
 }
+/* fadein */
+body {
+    animation: fade 5s;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 .footer .sns .li:not(:first-child){
     margin-left: 25px;
@@ -477,7 +489,7 @@ a:hover{
     }
 }
 /* navigation:mobile*/
-@media (max-width: 899px){}
+@media (max-width: 899px){
 html.open,.open body {
     height: 100%;
     overflow: hidden;
